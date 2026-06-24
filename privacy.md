@@ -4,7 +4,7 @@ title: Evenfall — Privacy Policy
 
 # Privacy Policy
 
-**Last updated: 15 June 2026**
+**Last updated: 24 June 2026**
 
 Evenfall is built to respect your privacy completely. The short version: **Evenfall does not
 collect, store, or transmit any personal data.** There is no account, no analytics, and no
@@ -18,11 +18,21 @@ tracking.
 
 ## Screen Recording permission
 
-Evenfall asks macOS for the **Screen Recording** permission so it can measure how *bright*
-your screen is and decide how much to dim. This measurement happens entirely on your Mac.
+Evenfall requires the macOS **Screen Recording** permission for one feature only: dimming
+bright on-screen content for eye comfort. To decide how much to dim, Evenfall needs to know how
+*bright* your screen currently is.
 
-- Evenfall reads only an **average brightness value** from the screen.
-- It **never** records, screenshots, saves, or transmits any of your screen content.
+- **What is collected:** Nothing is collected or retained. Evenfall briefly samples a heavily
+  downscaled image of the screen (about 32×20 pixels) and immediately reduces it to a single
+  **average brightness value** in memory. No screenshots, pixels, images, or screen contents are
+  saved.
+- **How it is used:** That brightness value is used solely, in real time, to compute the dimming
+  overlay. It is used for no other purpose.
+- **Where it is processed and stored:** All processing happens **entirely on your Mac**. Nothing
+  derived from the screen is written to disk, and each sample is discarded as soon as the next one
+  is taken. Evenfall has no servers and makes no network requests with this data.
+- **Disclosure and sharing:** Screen data is **never** transmitted off your device or shared with
+  Evenfall or any third party.
 - The dimming overlay is excluded from capture, so it doesn't appear in your own recordings
   or video calls.
 
